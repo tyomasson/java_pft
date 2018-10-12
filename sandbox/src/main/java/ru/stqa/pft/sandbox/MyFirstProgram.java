@@ -1,9 +1,11 @@
-package ua.stqa.pft.sandbox;
+package ru.stqa.pft.sandbox;
 
 public class MyFirstProgram {
 
     public static void main(String[] args) {
         System.out.println("Go go go");
+        System.out.println("Hey");
+        System.out.println("Hey");
     }
 
 }
