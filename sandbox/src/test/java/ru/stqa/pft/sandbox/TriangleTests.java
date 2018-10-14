@@ -9,6 +9,7 @@ public class TriangleTests {
     public void testArea(){
         Triangle t = new Triangle(5,6);
         Assert.assertEquals(t.area(),15);
+
     }
 
 }
