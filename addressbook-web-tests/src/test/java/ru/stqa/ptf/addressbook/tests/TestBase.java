@@ -1,11 +1,9 @@
 package ru.stqa.ptf.addressbook.tests;
 
 import org.openqa.selenium.*;
-import org.openqa.selenium.support.ui.Select;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
 import ru.stqa.ptf.addressbook.appmanager.ApplicationManager;
-import ru.stqa.ptf.addressbook.model.ContactData;
 
 import static org.testng.Assert.fail;
 
@@ -22,24 +20,6 @@ public class TestBase {
         app.init();
     }
 
-   /* @BeforeClass(alwaysRun = true)
-    public void setUp() throws Exception {
-      driver = new FirefoxDriver();
-      baseUrl = "https://www.katalon.com/";
-      driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
-      driver.get("http://localhost/addressbook/index.php");
-      login("admin", "secret");
-    }*/
-
-    /*private void login(String username, String password) {
-      driver.findElement(By.name("user")).clear();
-      driver.findElement(By.name("user")).sendKeys(username);
-      driver.findElement(By.name("pass")).clear();
-      driver.findElement(By.name("pass")).sendKeys(password);
-      driver.findElement(By.id("LoginForm")).submit();
-    }*/
-
-
     @AfterClass(alwaysRun = true)
     public void tearDown() throws Exception {
         app.stop();
@@ -49,15 +29,6 @@ public class TestBase {
         fail(verificationErrorString);
       }
     }
-
-    /*@AfterClass(alwaysRun = true)
-    public void tearDown() throws Exception {
-      driver.quit();
-      String verificationErrorString = verificationErrors.toString();
-      if (!"".equals(verificationErrorString)) {
-        fail(verificationErrorString);
-      }
-    }*/
 
     private boolean isElementPresent(By by) {
       try {
