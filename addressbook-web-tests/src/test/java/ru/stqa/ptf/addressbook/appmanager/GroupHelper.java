@@ -34,7 +34,7 @@ public class GroupHelper {
     }
 
     public void deleteSelectedGroups() {
-      driver.findElement(By.xpath("(.//*[normalize-space(text()) and normalize-space(.)='test2'])[8]/following::input[2]")).click();
+      driver.findElement(By.xpath("//*[@id=\"content\"]/form/input[5]")).click();
     }
 
     public void selectGroup() {

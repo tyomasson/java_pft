@@ -71,7 +71,7 @@ import java.util.concurrent.TimeUnit;
 
     public void init() {
         driver = new FirefoxDriver();
-        baseUrl = "https://www.katalon.com/";
+        //baseUrl = "https://www.katalon.com/";
         driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
         driver.get("http://localhost/addressbook/index.php");
         groupHelper = new GroupHelper(driver);
@@ -79,8 +79,6 @@ import java.util.concurrent.TimeUnit;
         sessionHelper = new SessionHelper(driver);
         sessionHelper.login("admin", "secret");
     }
-
-
 
         public void stop() {
         driver.quit();
