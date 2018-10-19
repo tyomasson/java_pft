@@ -6,7 +6,7 @@ import ru.stqa.ptf.addressbook.model.ContactData;
 public class NewContactTests extends TestBase{
 
   @Test
-  public void testNewContactTests() throws Exception {
+  public void testNewContactTests() {
 
     app.iniContactCreation();
     app.fillContactForm(new ContactData("Done", "Olegovich", "Goncharenko", "Tomash",
