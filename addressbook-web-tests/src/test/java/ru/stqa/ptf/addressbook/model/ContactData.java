@@ -1,24 +1,24 @@
 package ru.stqa.ptf.addressbook.model;
 
 public class ContactData {
-    private final String firstname;
-    private final String middlename;
-    private final String lastname;
-    private final String nick;
-    private final String title;
-    private final String company;
-    private final String address;
-    private final String homenumber;
-    private final String mobphone;
-    private final String workphone;
-    private final String fax;
-    private final String email;
-    private final String bday;
-    private final String bmonth;
-    private final String byear;
-    private final String address2;
-    private final String phone2;
-    private final String notes;
+    private String firstname;
+    private String middlename;
+    private String lastname;
+    private String nick;
+    private String title;
+    private String company;
+    private String address;
+    private String homenumber;
+    private String mobphone;
+    private String workphone;
+    private String fax;
+    private String email;
+    private String bday;
+    private String bmonth;
+    private String byear;
+    private String address2;
+    private String phone2;
+    private String notes;
 
     public ContactData(String firstname, String middlename, String lastname, String nick, String title, String company, String address, String homenumber, String mobphone, String workphone, String fax, String email, String bday, String bmonth, String byear, String address2, String phone2, String notes) {
         this.firstname = firstname;
