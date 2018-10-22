@@ -12,18 +12,18 @@ public class TestBase {
 
 
     @BeforeClass(alwaysRun = true)
-    public void setUp(){
+    public void setUp() {
         app.init();
     }
 
     @AfterClass(alwaysRun = true)
-    public void tearDown(){
+    public void tearDown() {
         app.stop();
 
         String verificationErrorString = app.verificationErrors.toString();
-      if (!"".equals(verificationErrorString)) {
-        fail(verificationErrorString);
-      }
+        if (!"".equals(verificationErrorString)) {
+            fail(verificationErrorString);
+        }
     }
 
 }
