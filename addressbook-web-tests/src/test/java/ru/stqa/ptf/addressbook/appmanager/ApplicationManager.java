@@ -14,8 +14,6 @@ public class ApplicationManager {
     private GroupHelper groupHelper;
 
     public StringBuffer verificationErrors = new StringBuffer();
-    //private String baseUrl;
-    private boolean acceptNextAlert = true;
 
     public void submitContactCreation() {
         driver.findElement(By.xpath("(.//*[normalize-space(text()) and normalize-space(.)='Notes:'])[1]/following::input[1]")).click();
